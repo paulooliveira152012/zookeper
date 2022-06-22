@@ -47,6 +47,12 @@ function filterByQuery(query, animalsArray) {
     return filteredResults;
   }
 
+  //function to find by the iD
+  function findById(id, animalsArray) {
+    const result = animalsArray.filter(animal => animal.id === id)[0];
+    return result;
+  }
+
 //adding the route
     //the get method requires two arguments: description of route to fetch from; and callbeck function to execute everytime route is accessed with a GET request
 app.get('/api/animals', (req, res) => {
@@ -54,9 +60,17 @@ app.get('/api/animals', (req, res) => {
     let results = animals;
     if (req.query) {
         results = filterByQuery(req.query, results);
+    } else {
+        res.send(404)
     }
     res.json(results);
 })
+
+//creating another get route to use parameters for the id
+app.get('/api/animals/:id', (req, res) => {
+    const result = findById(req.params.id, animals);
+      res.json(result);
+  });
 
 
 
