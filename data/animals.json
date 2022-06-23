@@ -119,7 +119,7 @@
       "id": "11"
     },
     {
-      "name": "Larry",
+      "name": "test",
       "species": "lemur",
       "diet": "omnivore",
       "personalityTraits": [
@@ -128,13 +128,56 @@
       "id": "12"
     },
     {
-      "name": "Larry",
+      "name": "test",
       "species": "lemur",
       "diet": "omnivore",
       "personalityTraits": [
         "hungry"
       ],
       "id": "13"
+    },
+    {
+      "name": "test2",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "14"
+    },
+    {
+      "name": "test3 no id",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "15"
+    },
+    {
+      "name": "test3 no id",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [],
+      "id": "16"
+    },
+    {
+      "name": "test3 no id",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        ""
+      ],
+      "id": "17"
+    },
+    {
+      "name": "test3 no id",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        ""
+      ],
+      "id": "18"
     }
   ]
 }

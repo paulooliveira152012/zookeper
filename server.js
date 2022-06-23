@@ -12,6 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 //creating a route to request data from
 const { animals } = require("./data/animals.json")
+//getting ccess to public folder
+app.use(express.static('public'));
+
 
 //function to filter animals
 function filterByQuery(query, animalsArray) {
@@ -119,6 +122,10 @@ app.get('/api/animals/:id', (req, res) => {
     }
   });
 
+  //creating route to html file
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+  });
 
 
 
