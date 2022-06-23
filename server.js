@@ -127,6 +127,21 @@ app.get('/api/animals/:id', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
   });
 
+  //creating route for animals.html
+  app.get('/animals', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/animals.html'));
+  });
+
+  //creating route to zookeepers.html 
+  app.get('/zookeepers', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+  });
+
+  //creating Wildcard route --> for links that don't exist
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+  });
+
 
 
 //make server listen to requests using the listen method

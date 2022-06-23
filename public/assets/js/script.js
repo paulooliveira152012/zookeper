@@ -26,10 +26,7 @@ const handleAnimalFormSubmit = event => {
   }
   const animalObject = { name, species, diet, personalityTraits };
 
-};
-
-
-//starting fecth request to front end 
+  //starting fecth request to front end 
 fetch('/api/animals', {  //fetch/send
   method: 'POST', //specifying the type of request (method) we will be doing to go to the proper endpoint
   headers: {  //headers property inform the request that this will be a JSON data
@@ -48,5 +45,10 @@ fetch('/api/animals', {  //fetch/send
     console.log(postResponse);
     alert('Thank you for adding an animal!');
   });
+
+};
+
+
+
 
 $animalForm.addEventListener('submit', handleAnimalFormSubmit);

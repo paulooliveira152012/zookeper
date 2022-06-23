@@ -178,6 +178,15 @@
         ""
       ],
       "id": "18"
+    },
+    {
+      "name": "Lontra",
+      "species": "otter",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "19"
     }
   ]
 }
