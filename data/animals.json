@@ -196,6 +196,15 @@
         "hungry"
       ],
       "id": "20"
+    },
+    {
+      "name": "cute",
+      "species": "otter",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "21"
     }
   ]
 }
