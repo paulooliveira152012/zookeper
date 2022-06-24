@@ -27,6 +27,7 @@ router.get('/animals/:id', (req, res) => {
       res.json(result);
   });
 
+  //creating another route, this time POST to send and save zookeeper?
   router.post('/animals', (req, res) => {
     // set id based on what the next index of the array will be
     req.body.id = animals.length.toString();

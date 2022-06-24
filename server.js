@@ -9,8 +9,15 @@ const express = require('express');
 const PORT = process.env.PORT || 3001;
 //assign express function to a variable to later chain on methods to Express.js server
 const app = express();
+
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
+
+
+//getting ccess to public folder
+app.use(express.static('public'));
+
+
 // parse incoming JSON data
 app.use(express.json());
 
@@ -20,8 +27,6 @@ app.use('/', htmlRoutes);
 
 //creating a route to request data from
 const { animals } = require("./data/animals.json")
-//getting ccess to public folder
-app.use(express.static('public'));
 
 //make server listen to requests using the listen method
 app.listen(PORT, () => {

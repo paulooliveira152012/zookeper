@@ -187,6 +187,15 @@
         "hungry"
       ],
       "id": "19"
+    },
+    {
+      "name": "lola",
+      "species": "Otter",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "20"
     }
   ]
 }
